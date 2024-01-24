@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
 }
 
 a {
@@ -16,6 +17,10 @@ header {
   margin-bottom: 0px;
 }
 
+footer {
+  background-color: #0f0f0f;
+  color: #ffff;
+}
 .nav-cont {
   display: flex;
   justify-content: space-between;
