@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
 }
@@ -20,6 +21,7 @@ header {
 footer {
   background-color: #0f0f0f;
   color: #ffff;
+  height: 80px;
 }
 .nav-cont {
   display: flex;
@@ -66,12 +68,12 @@ footer {
 }
 
 #job {
-  background-color: #6f6b6b;
+  background-color: #414141;
   height: 100vh;
 }
 
 #skills {
-  background-color: #d9d9d9;
+  background-color: #525252;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -79,6 +81,7 @@ footer {
 }
 
 #projects {
+  background-color: #525252;
   height: 100vh;
 }
 .hero-banner {
@@ -95,18 +98,55 @@ footer {
 }
 .d-title {
   font-size: 48px;
+  color: #fff;
 }
 .d-subTitle {
   font-size: 36px;
+  color: #fff;
 }
-
-.lines {
+/* .lines {
   border-top: solid 1px #fff;
   border-bottom: solid 1px #fff;
   width: 800px;
   text-align: center;
+  padding: 80px;
+} */
+
+.top-line {
+  border-top: solid 1px #fff;
+
+  width: 800px;
 
   padding: 80px;
+
+  animation-name: borderAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.bottom-line {
+  border-bottom: solid 1px #fff;
+
+  width: 800px;
+
+  padding: 80px;
+
+  animation-name: borderAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+  100% {
+    border-color: transparent;
+  }
 }
 
 .grid-container {
@@ -129,7 +169,7 @@ footer {
 
 .title {
   color: #ffffff;
-  background-color: #0f0f0f;
+
   border: 1px solid #0f0f0f;
   width: 50vw;
   height: 50px;
@@ -137,14 +177,26 @@ footer {
   align-items: center;
   margin: 10px;
   padding: 20px;
+  animation-name: borderAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .lore {
-  background-color: #0f0f0f;
+  border: solid 1px #ffffff;
   color: #ffffff;
   margin: 10px;
   height: 400px;
   padding: 20px;
+  animation-name: borderAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.exp {
+  border: solid 1px #ffffff;
 }
 
 .img-about {
@@ -166,7 +218,6 @@ footer {
 }
 
 .project {
-  border: 1px solid black;
 }
 
 .project > a > img {
